@@ -15,6 +15,8 @@
 
 if __main__:
     print('in main')
+else:
+    print('not in main')
 
 
 class RingQueue:
