@@ -13,6 +13,9 @@
   queue_inspect_item(n): return copy of item at position
   queue_list_size(): return length of list"""
 
+if __main__:
+    print('in main')
+
 
 class RingQueue:
     def __init__(self):
@@ -35,7 +38,7 @@ class RingQueue:
 
     def dequeue_head(self):
         temp_ptr = self.head_ptr
-        if (self.head_ptr == self.tail_ptr) or self.head_ptr = -1: #  Emptied the list so reset but preserve size
+        if (self.head_ptr == self.tail_ptr) or self.head_ptr == -1: #  Emptied the list so reset but preserve size
             self.head_ptr = -1
             self.tail_ptr = 0
             print('Queue Emptied')
